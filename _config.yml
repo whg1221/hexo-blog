@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: whg's blog
 subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
-timezone: ''
+description: '主要为前端问题研究，经验分享'
+keywords: 前端,Hexo,HTML,CSS,js,vue,vuejs,react,node,nodejs
+author: whg1221,whg1221@gmail.com
+language: zh-cn
+timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://whg1221.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
