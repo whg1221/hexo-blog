@@ -3,22 +3,22 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: whg's blog
-subtitle: ''
-description: '主要为前端问题研究，经验分享'
-keywords: 前端,Hexo,HTML,CSS,js,vue,vuejs,react,node,nodejs
-author: whg1221,whg1221@gmail.com
-language: zh-cn
+title: whg1221的小站
+subtitle: 'いらっしゃいませ~'
+description: ''
+keywords:
+author: whg1221
+language: zh-CN
 timezone: 'Asia/Shanghai'
 
 # URL
-## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://whg1221.github.io
-root: /
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+url: https://whg1221.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing index.html from permalinks
+  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
 # Directory
 source_dir: source
@@ -48,6 +48,13 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: ''
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -61,6 +68,10 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
+  疑难问题: bugs
+	深入研究: dig-in
+	项目总结: sum-up
+	其他随笔: essay
 tag_map:
 
 # Metadata elements
@@ -73,8 +84,8 @@ meta_generator: true
 ## http://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
-## Use post's date for updated date unless set in front-matter
-use_date_for_updated: false
+## updated_option supports 'mtime', 'date', 'empty'
+updated_option: 'mtime'
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -90,17 +101,9 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hexo-theme-Anatole
+theme: flex-block
 
 # Deployment
-## Docs: https://hexo.io/docs/deployment.html
+## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
-
-# customized theme settings
-## Docs: https://github.com/Ben02/hexo-theme-Anatole/wiki/Installation
-archive_generator:
-  per_page: 0
-  yearly: false
-  monthly: false
-  daily: false
