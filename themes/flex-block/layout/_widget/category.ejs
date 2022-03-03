@@ -1,5 +1,15 @@
 <ul class="wrap-list <%= class_name %>">
   <% page.categories.each(function (categorie) { %>
-    <li><a href="<%= url_for(categorie.path) %>">📒 <%= categorie.name %></a></li>
+    <%
+      function search(nameKey, targetObj){
+        for (var i in targetObj) {
+          if (targetObj[i] === nameKey) {
+            return i;
+          }
+        }
+      }
+      var name = search(categorie.name, config.category_map);
+    %>
+    <li><a href="<%= url_for(categorie.path) %>">📒 <%= name %></a></li>
   <% }) %>
 </ul>
