@@ -20,9 +20,9 @@ gulp是基于任务的设计模式的自动化工具，通过插件的配合解�
 
 1. 安装Node.js和npm
 
-   https://nodejs.org/en/
+   [https://nodejs.org/en/](https://nodejs.org/en/)
 
-   http://xiaoyaojones.blog.163.com/blog/static/28370125201351501113581/
+   [http://xiaoyaojones.blog.163.com/blog/static/28370125201351501113581/](http://xiaoyaojones.blog.163.com/blog/static/28370125201351501113581/)
 
 2. 安装gulp
 
